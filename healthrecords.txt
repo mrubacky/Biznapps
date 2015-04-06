@@ -1,6 +1,0 @@
-ID #	Last	First	Height	Weight
-100	Smith	James	66	150
-101	Jones	Linda	62	124
-102	Davis	David	68	180
-103	Miller	Sandra	65	90
-104	Taylor	Paul	72	150

@@ -7,9 +7,7 @@ public class Records {
     public static void main(String[] args){
         ReadRecords app = new ReadRecords();
         app.openFile();
-        ArrayList<StudentRecord> recordsToPrint = app.readFile();
-        for (StudentRecord r : recordsToPrint){
-            System.out.println(r.getId()+" "+r.getLastName()+" "+r.getFirstName()+" "+r.getHeight()+" "+r.getWeight());
-        }
+        ArrayList<StudentRecord> recordList = app.readFile();
+        Queries.runQuery(recordList);
     }
 }

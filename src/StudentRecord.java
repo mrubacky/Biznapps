@@ -5,15 +5,13 @@ public class StudentRecord {
     private int id;
     private String lastName;
     private String firstName;
-    private int height;
-    private int weight;
+    private int gradYear;
 
-    public StudentRecord(int id, String lastName, String firstName, int height, int weight){
+    public StudentRecord(int id, String lastName, String firstName, int gradYear){
         this.setId(id);
         this.setLastName(lastName);
         this.setFirstName(firstName);
-        this.setHeight(height);
-        this.setWeight(weight);
+        this.setGradYear(gradYear);
     }
 
     public void setId(int id) {
@@ -28,12 +26,8 @@ public class StudentRecord {
         this.firstName = firstName;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setGradYear(int gradYear) {
+        this.gradYear = gradYear;
     }
 
     public int getId() {
@@ -48,11 +42,7 @@ public class StudentRecord {
         return firstName;
     }
 
-    public int getHeight() {
-        return height;
-    }
-
-    public int getWeight() {
-        return weight;
+    public int getGradYear() {
+        return gradYear;
     }
 }

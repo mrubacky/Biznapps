@@ -9,7 +9,7 @@ public class ReadRecords {
     private Scanner input;
     public void openFile() {
         try {
-            input = new Scanner(new File("healthrecords.txt"));
+            input = new Scanner(new File("studentRecords.txt"));
         } catch (FileNotFoundException fileNotFoundException) {
             System.out.println("can't find tha file!");
 
@@ -22,9 +22,8 @@ public class ReadRecords {
             int id = input.nextInt();
             String ln = input.next();
             String fn = input.next();
-            int height = input.nextInt();
-            int weight = input.nextInt();
-            StudentRecord newRecord = new StudentRecord(id,ln,fn,height,weight);
+            int gradYear = input.nextInt();
+            StudentRecord newRecord = new StudentRecord(id,ln,fn,gradYear);
             records.add(newRecord);
         }
         return records;
